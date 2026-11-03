@@ -47,7 +47,7 @@ pub fn nbt(t: &Tag) -> Option<Nbt> {
 pub fn new_stack() -> ItemStack {
     let mut s = ItemStack::new(bc::ITEM, 1);
     let d = s.data_mut();
-    d.custom_name = Some(bc::ITEM_NAME.to_owned());
+    d.custom_name = Some(tag(&bc::item_name()));
     d.set_other(bc::ITEM_NAME_COMPONENT, Some(tag(&bc::item_name())));
     d.set_other(bc::CUSTOM_DATA, Some(tag(&bc::custom_data())));
     d.set_other(bc::LORE, Some(tag(&bc::lore(&Pointing::Idle))));
