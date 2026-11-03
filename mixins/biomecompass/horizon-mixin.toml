@@ -11,7 +11,7 @@ priority = 150
 # generator, `/tp`, the LAN hub, the inventories), so BiomeCompass builds on
 # this commit only. Its other hooks use only hook points (NATIVE_HOOKS_API 1).
 [compatibility]
-horizon_revision = "142388e1c136e622652ec7505af15d8ad195e041"
+horizon_revision = "aa27eca326db26e999d4e59d7899576016764b1e"
 
 # The search, the settings, the item's components, the recipe and the picker
 # as plain values: in the game's library (public), so the library's hooks (a
